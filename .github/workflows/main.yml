@@ -1,0 +1,56 @@
+on: [workflow_dispatch]
+
+jobs:
+  build-aarch64:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Alpine Linux v3.15 for aarch64
+        uses: jirutka/setup-alpine@v1
+        with:
+          arch: aarch64
+          packages: linux-headers bash git cmake gcc g++ automake libtool autoconf make sed
+          branch: v3.15
+    
+      - name: build
+        run: |
+          (cd scripts && ./build_deps.sh)
+          cd - && sed -i 's/CPUARCH/aarch64/g' src/core/config/Config_default.h
+          mkdir -v build && cd build
+          cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DARM_TARGET=8 -DWITH_EMBEDDED_CONFIG=ON
+          make -j $(nproc)
+          mv xmrig xmrig-static
+          
+        shell: alpine.sh {0}
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmrig-static-aarch64
+          path: build/xmrig-static
+
+  build-x86_64:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Alpine Linux v3.15 for aarch64
+        uses: jirutka/setup-alpine@v1
+        with:
+          arch: x86_64
+          packages: linux-headers bash git cmake gcc g++ automake libtool autoconf make sed
+          branch: v3.15
+    
+      - name: build
+        run: |
+          (cd scripts && ./build_deps.sh)
+          cd - && sed -i 's/CPUARCH/x86_64/g' src/core/config/Config_default.h
+          mkdir -v build && cd build
+          cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DWITH_EMBEDDED_CONFIG=ON
+          make -j $(nproc)
+          mv xmrig xmrig-static
+          
+        shell: alpine.sh {0}
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmrig-static-x86_64
+          path: build/xmrig-static
