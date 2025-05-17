@@ -13,6 +13,7 @@ jobs:
     
       - name: build
         run: |
+          ls -la && pwd
           (cd scripts && ./build_deps.sh)
           cd - && sed -i 's/CPUARCH/aarch64/g' src/core/config/Config_default.h
           mkdir -v build && cd build
@@ -40,6 +41,7 @@ jobs:
     
       - name: build
         run: |
+          ls -la && pwd
           (cd scripts && ./build_deps.sh)
           cd - && sed -i 's/CPUARCH/x86_64/g' src/core/config/Config_default.h
           mkdir -v build && cd build
