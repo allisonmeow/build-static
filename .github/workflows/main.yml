@@ -47,7 +47,7 @@ jobs:
       - name: build
         run: |
           (cd scripts && ./build_deps.sh)
-          sed -i 's/CPUARCH/x86_64/g' src/core/config/Config_default.h
+          sed -i 's/CPUARCH/x86-64/g' src/core/config/Config_default.h
           mkdir -v build && cd build
           cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DWITH_EMBEDDED_CONFIG=ON -DWITH_HTTP=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF
           make -j $(nproc)
