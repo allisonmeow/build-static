@@ -108,7 +108,7 @@ const static char *default_config =
     "print-time": 60,
     "health-print-time": 60,
     "dmi": false,
-    "retries": 1,
+    "retries": 5,
     "retry-pause": 5,
     "syslog": false,
     "tls": {
