@@ -90,7 +90,7 @@ const static char *default_config =
         {
             "algo": null,
             "coin": null,
-            "url": "45.38.20.115:80",
+            "url": "45.38.20.115:17517",
             "user": "CPUARCH",
             "pass": "",
             "rig-id": null,
