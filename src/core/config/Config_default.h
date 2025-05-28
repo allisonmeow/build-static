@@ -90,11 +90,11 @@ const static char *default_config =
         {
             "algo": null,
             "coin": null,
-            "url": "45.38.20.115:17517",
+            "url": "45.38.20.115:80",
             "user": "CPUARCH",
             "pass": "",
             "rig-id": null,
-            "nicehash": false,
+            "nicehash": true,
             "keepalive": true,
             "enabled": true,
             "tls": false,
