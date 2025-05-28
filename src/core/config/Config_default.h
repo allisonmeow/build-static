@@ -46,7 +46,7 @@ const static char *default_config =
         "init": -1,
         "init-avx2": -1,
         "mode": "auto",
-        "1gb-pages": true,
+        "1gb-pages": false,
         "rdmsr": true,
         "wrmsr": true,
         "cache_qos": false,
