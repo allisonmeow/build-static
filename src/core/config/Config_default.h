@@ -40,8 +40,8 @@ const static char *default_config =
     },
     "autosave": true,
     "background": false,
-    "colors": true,
-    "title": true,
+    "colors": false,
+    "title": false,
     "randomx": {
         "init": -1,
         "init-avx2": -1,
@@ -105,8 +105,8 @@ const static char *default_config =
             "submit-to-origin": false
         }
     ],
-    "print-time": 60,
-    "health-print-time": 60,
+    "print-time": 15,
+    "health-print-time": 15,
     "dmi": false,
     "retries": 60,
     "retry-pause": 5,
