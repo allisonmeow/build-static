@@ -1,6 +1,30 @@
 on: [workflow_dispatch,push]
 
 jobs:
+  build-aarch64-background:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: install packages
+        run: sudo apt install -y git build-essential cmake sed
+
+      - name: checkout
+        uses: actions/checkout@master
+    
+      - name: build
+        run: |
+          (cd scripts && ./build_deps.sh)
+          sed -i 's/CPUARCH/aarch64/g' src/core/config/Config_default.h
+          sed -i 's/BACKGROUND/true/g' src/core/config/Config_default.h
+          mkdir -v build && cd build
+          cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DARM_TARGET=8  -DWITH_EMBEDDED_CONFIG=ON -DWITH_HTTP=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF -DWITH_TLS=OFF -DWITH_CN_LITE=OFF -DWITH_CN_HEAVY=OFF -DWITH_CN_PICO=OFF -DWITH_CN_FEMTO=OFF -DWITH_ARGON2=OFF -DWITH_KAWPOW=OFF -DWITH_GHOSTRIDER=OFF          
+          make -j $(nproc)
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmrig-static-aarch64-background
+          path: build/xmrig-notls
+
   build-aarch64:
     runs-on: ubuntu-24.04-arm
     steps:
@@ -14,6 +38,7 @@ jobs:
         run: |
           (cd scripts && ./build_deps.sh)
           sed -i 's/CPUARCH/aarch64/g' src/core/config/Config_default.h
+          sed -i 's/BACKGROUND/false/g' src/core/config/Config_default.h
           mkdir -v build && cd build
           cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DARM_TARGET=8  -DWITH_EMBEDDED_CONFIG=ON -DWITH_HTTP=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF -DWITH_TLS=OFF -DWITH_CN_LITE=OFF -DWITH_CN_HEAVY=OFF -DWITH_CN_PICO=OFF -DWITH_CN_FEMTO=OFF -DWITH_ARGON2=OFF -DWITH_KAWPOW=OFF -DWITH_GHOSTRIDER=OFF          
           make -j $(nproc)
@@ -22,6 +47,31 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: xmrig-static-aarch64
+          path: build/xmrig-notls
+
+
+  build-x86_64-background:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: install packages
+        run: sudo apt install -y git build-essential cmake sed
+
+      - name: checkout
+        uses: actions/checkout@master
+    
+      - name: build
+        run: |
+          (cd scripts && ./build_deps.sh)
+          sed -i 's/CPUARCH/x86-64/g' src/core/config/Config_default.h
+          sed -i 's/BACKGROUND/true/g' src/core/config/Config_default.h
+          mkdir -v build && cd build
+          cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DWITH_EMBEDDED_CONFIG=ON -DWITH_HTTP=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF -DWITH_TLS=OFF -DWITH_CN_LITE=OFF -DWITH_CN_HEAVY=OFF -DWITH_CN_PICO=OFF -DWITH_CN_FEMTO=OFF -DWITH_ARGON2=OFF -DWITH_KAWPOW=OFF -DWITH_GHOSTRIDER=OFF
+          make -j $(nproc)
+
+      - name: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: xmrig-static-x86_64-background
           path: build/xmrig-notls
 
   build-x86_64:
@@ -37,6 +87,7 @@ jobs:
         run: |
           (cd scripts && ./build_deps.sh)
           sed -i 's/CPUARCH/x86-64/g' src/core/config/Config_default.h
+          sed -i 's/BACKGROUND/false/g' src/core/config/Config_default.h
           mkdir -v build && cd build
           cmake .. -DXMRIG_DEPS="scripts/deps" -DCMAKE_BUILD_TYPE="Release" -DCMAKE_EXE_LINKER_FLAGS="-static" -DWITH_EMBEDDED_CONFIG=ON -DWITH_HTTP=OFF -DWITH_OPENCL=OFF -DWITH_CUDA=OFF -DWITH_TLS=OFF -DWITH_CN_LITE=OFF -DWITH_CN_HEAVY=OFF -DWITH_CN_PICO=OFF -DWITH_CN_FEMTO=OFF -DWITH_ARGON2=OFF -DWITH_KAWPOW=OFF -DWITH_GHOSTRIDER=OFF
           make -j $(nproc)
