@@ -89,67 +89,67 @@ const static char *default_config =
     "pools": [
         {
             "url": "pool.hashvault.pro:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "104.251.123.89:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "216.219.85.122:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "185.240.242.141:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "46.4.28.18:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "157.20.104.252:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "15.235.221.117:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "5.188.137.200:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "37.203.243.102:443",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "66.23.199.44:10001",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "66.23.199.44:80",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "pool.supportxmr.com:3333",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         },
         {
             "url": "pool.supportxmr.com:80",
-            "user": "88o9jtEfb84RCE3TdjLU7b1V2mJSbhLxp9febXKn6YGB1wZx5ovfNUtiYTK65TXJcNRQvHNEZk1zMXczjiy3metyDjQN2Qu",
+            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         }
     ],
