@@ -121,14 +121,14 @@ private:
     inline static Config *load(Process *process)
     {
         JsonChain chain;
-        ConfigTransform transform;
+        // ConfigTransform transform;
         std::unique_ptr<Config> config;
 
-        ConfigTransform::load(chain, process, transform);
+        // ConfigTransform::load(chain, process, transform);
 
-        if (read(chain, config)) {
-            return config.release();
-        }
+        // if (read(chain, config)) {
+        //     return config.release();
+        // }
 
         // chain.addFile(Process::location(Process::DataLocation, "config.json"));
         // if (read(chain, config)) {
@@ -145,13 +145,11 @@ private:
         //     return config.release();
         // }
 
-#       ifdef XMRIG_FEATURE_EMBEDDED_CONFIG
         chain.addRaw(default_config);
 
         if (read(chain, config)) {
             return config.release();
         }
-#       endif
 
         return nullptr;
     }
