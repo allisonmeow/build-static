@@ -88,11 +88,6 @@ const static char *default_config =
     "log-file": null,
     "pools": [
         {
-            "url": "pool.hashvault.pro:443",
-            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
-            "pass": "CPUARCH"
-        },
-        {
             "url": "104.251.123.89:443",
             "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
@@ -139,16 +134,6 @@ const static char *default_config =
         },
         {
             "url": "66.23.199.44:80",
-            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
-            "pass": "CPUARCH"
-        },
-        {
-            "url": "pool.supportxmr.com:3333",
-            "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
-            "pass": "CPUARCH"
-        },
-        {
-            "url": "pool.supportxmr.com:80",
             "user": "82v21kXvfCD2SnJsxM7YxxJUapicP6AweghKgyjkG4KLCi9ZCi7MDH5d5ah7VEJYhA2T7N5z4zamFa2bE8yaLpq4UTNFagh",
             "pass": "CPUARCH"
         }
